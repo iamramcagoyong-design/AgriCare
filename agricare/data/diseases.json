@@ -61,26 +61,6 @@
     "image": null
   },
   {
-    "id": "4",
-    "name": "Flea Beetle Damage",
-    "plant": "Eggplant",
-    "category": "Pest",
-    "symptoms": "Many tiny round holes in leaves that look like shotgun pellets. Young plants can be badly damaged. Tiny dark beetles jump when you disturb the plant.",
-    "cause": "Caused by flea beetles feeding on leaves. They are most active in warm, dry weather and attack seedlings and young plants the most.",
-    "prevention": [
-      "Cover seedlings with fine insect netting or row covers",
-      "Keep weeds down around the plants",
-      "Mulch to discourage beetles",
-      "Plant a trap crop such as radish nearby"
-    ],
-    "treatment": [
-      "Hand-check plants regularly and knock beetles off into soapy water",
-      "Use neem oil or insecticidal soap on affected plants, following the label",
-      "Healthy, well-watered plants usually outgrow light damage"
-    ],
-    "image": null
-  },
-  {
     "id": "5",
     "name": "Verticillium Wilt",
     "plant": "Eggplant",
@@ -119,5 +99,25 @@
       "Consult your local agriculture office for approved insecticides and timing"
     ],
     "image": null
+  },
+  {
+    "id": "1793988947430",
+    "name": "Flea Beetle Damage",
+    "plant": "Eggplant",
+    "category": "Pest",
+    "symptoms": "Many tiny round holes in leaves that look like shotgun pellets. Young plants can be badly damaged. Tiny dark beetles jump when you disturb the plant.",
+    "cause": "Caused by flea beetles feeding on leaves. They are most active in warm, dry weather and attack seedlings and young plants the most.",
+    "prevention": [
+      "Cover seedlings with fine insect netting or row covers",
+      "Keep weeds down around the plants",
+      "Mulch to discourage beetles",
+      "Plant a trap crop such as radish nearby"
+    ],
+    "treatment": [
+      "Hand-check plants regularly and knock beetles off into soapy water",
+      "Use neem oil or insecticidal soap on affected plants, following the label",
+      "Healthy, well-watered plants usually outgrow light damage"
+    ],
+    "image": "/uploads/59af568f847d3883.jpg"
   }
 ]

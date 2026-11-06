@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgriCare - Plant Disease Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <a class="logo" href="/">🌱 Agri<span>Care</span></a>
+      <nav class="nav">
+        <a href="/">Diseases</a>
+        <a href="/admin.html">Admin</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Identify your plant's problem</h1>
+    <p>Browse common plant diseases and pests by how they look. Compare symptoms side by side, learn the main cause, and find out how to prevent and treat them.</p>
+  </section>
+
+  <main class="container">
+    <div class="filters">
+      <input id="search" type="search" placeholder="Search by plant, symptom or disease name (e.g. yellow leaves, tomato)">
+      <select id="plant-filter"><option value="">All plants</option></select>
+      <select id="cat-filter"><option value="">All causes</option></select>
+    </div>
+    <div id="grid" class="grid"></div>
+    <p id="empty" class="empty" hidden>No diseases match your search. Try different words or clear the filters.</p>
+  </main>
+
+  <div id="compare-bar" class="compare-bar" hidden>
+    <span id="compare-count"></span>
+    <button id="compare-btn" class="btn">Compare</button>
+    <button id="compare-clear" class="btn secondary">Clear</button>
+  </div>
+
+  <dialog id="detail-dialog"></dialog>
+  <dialog id="compare-dialog"></dialog>
+
+  <footer>AgriCare is a guide only. For serious outbreaks, ask your local agriculture office or an agricultural technician.</footer>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

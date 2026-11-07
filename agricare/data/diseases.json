@@ -378,5 +378,207 @@
       "Monitor the lower leaves and sheaths regularly."
     ],
     "image": "/uploads/05baa349139ac33b.jpg"
+  },
+  {
+    "id": "1794070408764",
+    "name": "Citrus Canker",
+    "plant": "Calamansi",
+    "category": "Bacterial",
+    "symptoms": "Small, raised brown spots develop on calamansi leaves, stems, and fruits. The spots become rough, corky lesions with yellow halos around them. Severely infected leaves may fall prematurely.",
+    "cause": "Caused by the bacterium Xanthomonas citri subsp. citri. It spreads through wind-driven rain, infected planting materials, and contaminated tools.",
+    "prevention": [
+      "Use disease-free calamansi seedlings.",
+      "Avoid planting trees too close together.",
+      "Prune infected branches using disinfected tools.",
+      "Maintain good airflow around the trees.",
+      "Avoid working with wet plants."
+    ],
+    "treatment": [
+      "Remove and properly dispose of severely infected branches.",
+      "Disinfect pruning tools after use.",
+      "Apply approved copper-based products when recommended.",
+      "Consult an agricultural technician for severe infections."
+    ],
+    "image": "/uploads/49def703b96c7ce6.jpg"
+  },
+  {
+    "id": "1794070849139",
+    "name": "Citrus Greening (Huanglongbing / HLB)",
+    "plant": "Calamansi",
+    "category": "Bacterial",
+    "symptoms": "Leaves develop irregular yellow patterns that are not symmetrical on both sides of the midrib. Fruits may become small, misshapen, unevenly colored, and bitter. Infected branches may gradually die.",
+    "cause": "Associated with the bacterium Candidatus Liberibacter asiaticus, which is transmitted mainly by the Asian citrus psyllid (Diaphorina citri).",
+    "prevention": [
+      "Use certified disease-free calamansi seedlings.",
+      "Regularly inspect trees for yellowing and unusual leaf patterns.",
+      "Monitor and manage Asian citrus psyllid populations.",
+      "Remove volunteer citrus plants that may harbor the disease.",
+      "Avoid transporting infected planting materials."
+    ],
+    "treatment": [
+      "There is currently no reliable cure for infected trees.",
+      "Remove severely infected trees following agricultural guidance.",
+      "Manage psyllid populations using approved control methods.",
+      "Replace infected trees with healthy planting materials."
+    ],
+    "image": "/uploads/64700085ed6ad85f.webp"
+  },
+  {
+    "id": "1794071089818",
+    "name": "Citrus Leaf Miner",
+    "plant": "Calamansi",
+    "category": "Pest",
+    "symptoms": "Young calamansi leaves develop thin, winding, silvery trails beneath the leaf surface. The affected leaves may curl, become distorted, and eventually dry out.",
+    "cause": "Caused by the larvae of the citrus leaf miner moth (Phyllocnistis citrella). The larvae feed inside young leaves, creating winding tunnels.",
+    "prevention": [
+      "Regularly inspect new leaves for winding trails.",
+      "Avoid excessive pruning that encourages too much tender new growth.",
+      "Maintain healthy trees through balanced fertilization.",
+      "Encourage beneficial insects that naturally control leaf miners."
+    ],
+    "treatment": [
+      "Remove heavily damaged young leaves when practical.",
+      "Protect beneficial insects and natural predators.",
+      "Use horticultural oils or other approved treatments when recommended.",
+      "Apply treatments to new leaf growth according to local agricultural guidance."
+    ],
+    "image": "/uploads/8bebf162350602bf.webp"
+  },
+  {
+    "id": "1794072416273",
+    "name": "Northern Corn Leaf Blight",
+    "plant": "Corn",
+    "category": "Fungal",
+    "symptoms": "Long, cigar-shaped gray-green or brown lesions appear on corn leaves. These lesions gradually enlarge and may cover large portions of the leaves. Severely infected leaves turn brown and dry out.",
+    "cause": "Caused by the fungus Exserohilum turcicum. It spreads through airborne spores and infected crop residues, especially during warm and humid weather.",
+    "prevention": [
+      "Plant resistant corn varieties.",
+      "Practice crop rotation with non-host crops.",
+      "Remove or properly manage infected crop residues.",
+      "Maintain proper spacing between plants.",
+      "Monitor leaves regularly, especially during rainy periods."
+    ],
+    "treatment": [
+      "Remove severely infected leaves when practical.",
+      "Apply approved fungicides when necessary and recommended.",
+      "Avoid excessive nitrogen fertilizer.",
+      "Maintain balanced plant nutrition.",
+      "Consult an agricultural technician for severe infections."
+    ],
+    "image": "/uploads/dd1f0211c47b2a9d.webp"
+  },
+  {
+    "id": "1794072737847",
+    "name": "Corn Common Rust",
+    "plant": "Corn",
+    "category": "Fungal",
+    "symptoms": "Small, raised reddish-brown or orange pustules appear on both sides of corn leaves. When touched, these pustules may release reddish-brown powder. Severe infections cause leaves to dry prematurely.",
+    "cause": "Caused by the fungus Puccinia sorghi. Its spores spread through the air and infect corn leaves under favorable environmental conditions.",
+    "prevention": [
+      "Plant rust-resistant corn varieties.",
+      "Remove volunteer corn plants that may harbor the fungus.",
+      "Maintain proper plant spacing.",
+      "Monitor leaves for early rust symptoms.",
+      "Keep the field free from unnecessary weeds."
+    ],
+    "treatment": [
+      "Apply approved fungicides when infection is severe and treatment is recommended.",
+      "Remove heavily infected crop residues after harvest.",
+      "Maintain proper fertilizer application.",
+      "Monitor surrounding plants for new infections."
+    ],
+    "image": "/uploads/ce58cdfe6a5fc2cc.jpg"
+  },
+  {
+    "id": "1794073197750",
+    "name": "Fall Armyworm Damage",
+    "plant": "Corn",
+    "category": "Pest",
+    "symptoms": "Irregular holes and ragged edges appear on corn leaves. Young plants may show window-like feeding marks, while older caterpillars leave large holes and produce noticeable sawdust-like droppings inside the whorl. Severe attacks can destroy the growing point.",
+    "cause": "Caused by the larvae of the fall armyworm (Spodoptera frugiperda). The adult moth lays eggs on corn leaves, and the emerging caterpillars feed on the leaves and growing points.",
+    "prevention": [
+      "Inspect corn plants regularly, especially the whorl.",
+      "Plant at recommended times.",
+      "Remove egg masses and young caterpillars when practical.",
+      "Practice crop rotation.",
+      "Encourage natural predators and beneficial insects."
+    ],
+    "treatment": [
+      "Remove caterpillars manually when infestations are small.",
+      "Use biological control products containing Bacillus thuringiensis (Bt) when appropriate.",
+      "Apply locally registered insecticides when necessary.",
+      "Target young larvae before they become difficult to control.",
+      "Follow pesticide label instructions carefully."
+    ],
+    "image": "/uploads/75196b471f831a54.jpg"
+  },
+  {
+    "id": "1794074214011",
+    "name": "Ginger Bacterial Wilt",
+    "plant": "Ginger",
+    "category": "Bacterial",
+    "symptoms": "The leaves gradually turn yellow and wilt, starting with the lower leaves. The entire plant eventually collapses while the leaves remain attached. Cutting the ginger rhizome may reveal brown discoloration and a milky bacterial ooze.",
+    "cause": "Caused by the bacterium Ralstonia solanacearum species complex. It spreads through contaminated soil, infected rhizomes, irrigation water, and farm tools.",
+    "prevention": [
+      "Use healthy, disease-free ginger rhizomes for planting.",
+      "Avoid planting ginger in previously infected soil.",
+      "Maintain proper drainage to prevent waterlogging.",
+      "Clean and disinfect farm tools.",
+      "Practice crop rotation with non-host crops."
+    ],
+    "treatment": [
+      "Remove and properly dispose of infected plants and rhizomes.",
+      "Avoid transferring contaminated soil to healthy areas.",
+      "Do not use rhizomes from infected plants as planting materials.",
+      "There is no reliable chemical cure for infected plants.",
+      "Consult an agricultural technician before replanting affected areas."
+    ],
+    "image": "/uploads/0f2f7e498c4efea0.jpg"
+  },
+  {
+    "id": "1794074559611",
+    "name": "Ginger Leaf Spot",
+    "plant": "Ginger",
+    "category": "Fungal",
+    "symptoms": "Small yellowish or brown spots appear on ginger leaves. The spots gradually enlarge and may develop dark brown edges with pale centers. Severely affected leaves turn brown, dry out, and die prematurely.",
+    "cause": "Often associated with fungi such as Phyllosticta zingiberi. The disease spreads through spores carried by wind and rain, especially under warm and humid conditions.",
+    "prevention": [
+      "Maintain proper spacing between ginger plants.",
+      "Avoid excessive moisture on the leaves",
+      "Remove infected leaves and plant debris.",
+      "Provide good air circulation.",
+      "Use healthy planting rhizomes."
+    ],
+    "treatment": [
+      "Remove heavily infected leaves.",
+      "Dispose of infected plant debris properly.",
+      "Avoid overhead watering when possible.",
+      "Apply locally approved fungicides when necessary and recommended.",
+      "Monitor new leaves for recurring symptoms."
+    ],
+    "image": "/uploads/d587684831209c6f.webp"
+  },
+  {
+    "id": "1794074654380",
+    "name": "Ginger Soft Rot (Rhizome Rot)",
+    "plant": "Ginger",
+    "category": "Fungal",
+    "symptoms": "The leaves turn yellow, beginning at the tips, and gradually wilt and dry. The base of the stem becomes soft, while the underground rhizomes develop water-soaked, mushy, and rotten areas. In advanced cases, the entire plant collapses.",
+    "cause": "Commonly caused by Pythium species, particularly Pythium myriotylum. These fungus-like organisms thrive in poorly drained, waterlogged soil and can spread through infected rhizomes and contaminated soil.",
+    "prevention": [
+      "Plant healthy and disease-free ginger rhizomes.",
+      "Use well-drained soil or raised planting beds.",
+      "Avoid overwatering and waterlogging.",
+      "Remove infected plants immediately.",
+      "Practice crop rotation and maintain field sanitation."
+    ],
+    "treatment": [
+      "Remove and properly dispose of infected plants and rhizomes.",
+      "Improve drainage around the planting area.",
+      "Avoid reusing contaminated planting materials.",
+      "Use approved treatments only when recommended by agricultural technicians.",
+      "Allow affected soil to recover before planting ginger again."
+    ],
+    "image": "/uploads/f7e0b47960a0d09e.webp"
   }
 ]

@@ -55,17 +55,6 @@ function create(data, image) {
   });
 }
 
-// Returns the removed disease, or null if the id doesn't exist
-function remove(id) {
-  return withLock(async () => {
-    const list = await getAll();
-    const target = list.find((d) => d.id === id);
-    if (!target) return null;
-    await saveAll(list.filter((d) => d.id !== id));
-    return target;
-  });
-}
-
 // Updates an existing disease. If a new photo was uploaded, it replaces the old one.
 // Returns { updated, oldImage } (oldImage = file to delete), or null if the id doesn't exist
 function update(id, data, newImage) {
@@ -91,4 +80,16 @@ function update(id, data, newImage) {
     return { updated, oldImage: newImage ? old.image : null };
   });
 }
+
+// Returns the removed disease, or null if the id doesn't exist
+function remove(id) {
+  return withLock(async () => {
+    const list = await getAll();
+    const target = list.find((d) => d.id === id);
+    if (!target) return null;
+    await saveAll(list.filter((d) => d.id !== id));
+    return target;
+  });
+}
+
 module.exports = { CATEGORIES, getAll, validate, create, update, remove };

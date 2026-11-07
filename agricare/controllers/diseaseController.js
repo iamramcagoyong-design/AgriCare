@@ -24,12 +24,6 @@ exports.create = wrap(async (req, res) => {
   res.status(201).json(disease);
 });
 
-exports.remove = wrap(async (req, res) => {
-  const removed = await model.remove(req.params.id);
-  if (!removed) return res.status(404).json({ error: 'Not found' });
-  await deleteUpload(removed.image);
-  res.status(204).end();
-});
 exports.update = wrap(async (req, res) => {
   const image = req.file ? '/uploads/' + req.file.filename : null;
   const error = model.validate(req.body);
@@ -44,4 +38,11 @@ exports.update = wrap(async (req, res) => {
   }
   await deleteUpload(result.oldImage); // remove the replaced photo
   res.json(result.updated);
+});
+
+exports.remove = wrap(async (req, res) => {
+  const removed = await model.remove(req.params.id);
+  if (!removed) return res.status(404).json({ error: 'Not found' });
+  await deleteUpload(removed.image);
+  res.status(204).end();
 });

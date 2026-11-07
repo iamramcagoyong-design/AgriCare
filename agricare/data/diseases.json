@@ -1,46 +1,5 @@
 [
   {
-    "id": "1",
-    "name": "Early Blight",
-    "plant": "Tomato",
-    "category": "Fungal",
-    "symptoms": "Dark brown spots with concentric rings (like a target) on older, lower leaves first, often surrounded by a yellow halo. Stems and fruit can also develop dark, sunken lesions.",
-    "cause": "Caused by the fungus Alternaria solani. It thrives in warm, humid weather and spreads by rain splash and overhead watering. Stressed or poorly fed plants get it more easily.",
-    "prevention": [
-      "Rotate crops: avoid planting tomato, eggplant or potato in the same spot for 2-3 years",
-      "Water at the base of the plant, not over the leaves",
-      "Mulch the soil to stop spores splashing up",
-      "Give plants enough spacing and stake them for airflow",
-      "Clear away plant debris at the end of the season"
-    ],
-    "treatment": [
-      "Remove and dispose of infected lower leaves right away",
-      "Apply a fungicide labeled for tomato blight (copper-based or as advised by your local agriculture office), following the label",
-      "Keep plants well fed and watered to reduce stress"
-    ],
-    "image": null
-  },
-  {
-    "id": "2",
-    "name": "Late Blight",
-    "plant": "Tomato",
-    "category": "Fungal",
-    "symptoms": "Large, greasy-looking, gray-green patches on leaves that turn brown and papery. White fuzzy growth may appear under leaves in humid conditions. Fruit develops firm, brown, blotchy patches.",
-    "cause": "Caused by the water mold Phytophthora infestans. It spreads very fast in cool, wet, humid weather and can wipe out a crop within days.",
-    "prevention": [
-      "Plant resistant varieties when available",
-      "Avoid overhead watering and water in the morning",
-      "Space plants for good airflow",
-      "Inspect plants often during rainy, cool spells"
-    ],
-    "treatment": [
-      "Remove and destroy infected plants (bag them; do not compost)",
-      "Protective fungicides work best applied before or at the first signs; follow the label and local advice",
-      "Do not save fruit from infected plants"
-    ],
-    "image": null
-  },
-  {
     "id": "3",
     "name": "Blossom End Rot",
     "plant": "Tomato",
@@ -119,5 +78,50 @@
       "Consult your local agriculture office for approved insecticides and timing"
     ],
     "image": null
+  },
+  {
+    "id": "1794024002063",
+    "name": "Early Blight",
+    "plant": "Tomato",
+    "category": "Fungal",
+    "symptoms": "Dark brown spots with concentric rings (like a target) on older, lower leaves first, often surrounded by a yellow halo. Stems and fruit can also develop dark, sunken lesions.",
+    "cause": "Caused by the fungus Alternaria solani. It thrives in warm, humid weather and spreads by rain splash and overhead watering. Stressed or poorly fed plants get it more easily.",
+    "prevention": [
+      "Rotate crops: avoid planting tomato, eggplant or potato in the same spot for 2-3 years",
+      "Water at the base of the plant, not over the leaves",
+      "MulcRotate crops: avoid planting tomato, eggplant or potato in the same spot for 2-3 years",
+      "Water at the base of the plant, not over the leaves",
+      "Mulch the soil to stop spores splashing up",
+      "Give plants enough spacing and stake them for airflow",
+      "Clear away plant debris at the end of the season the soil to stop spores splashing up",
+      "Give plants enough spacing and stake them for airflow",
+      "Clear away plant debris at the end of the season"
+    ],
+    "treatment": [
+      "Remove and dispose of infected lower leaves right away",
+      "Apply a fungicide labeled for tomato blight (copper-based or as advised by your local agriculture office), following the label",
+      "Keep plants well fed and watered to reduce stress"
+    ],
+    "image": "/uploads/98657514e21664eb.jpg"
+  },
+  {
+    "id": "1794024306040",
+    "name": "Late Blight",
+    "plant": "Tomato",
+    "category": "Fungal",
+    "symptoms": "Large, greasy-looking, gray-green patches on leaves that turn brown and papery. White fuzzy growth may appear under leaves in humid conditions. Fruit develops firm, brown, blotchy patches.",
+    "cause": "Caused by the water mold Phytophthora infestans. It spreads very fast in cool, wet, humid weather and can wipe out a crop within days.",
+    "prevention": [
+      "Plant resistant varieties when available",
+      "Avoid overhead watering and water in the morning",
+      "Space plants for good airflow",
+      "Inspect plants often during rainy, cool spells"
+    ],
+    "treatment": [
+      "Remove and destroy infected plants (bag them; do not compost)",
+      "Protective fungicides work best applied before or at the first signs; follow the label and local advice",
+      "Do not save fruit from infected plants"
+    ],
+    "image": "/uploads/ddeee4c3931d97a3.jpg"
   }
 ]

@@ -26,6 +26,12 @@ export class AdminModel {
     return res.ok ? { ok: true } : { ok: false, error: data.error || 'Something went wrong' };
   }
 
+  async update(id, formData) {
+    const res = await fetch('/api/diseases/' + id, { method: 'PUT', headers: this.headers, body: formData });
+    const data = await res.json().catch(() => ({}));
+    return res.ok ? { ok: true } : { ok: false, error: data.error || 'Something went wrong' };
+  }
+
   async remove(id) {
     await fetch('/api/diseases/' + id, { method: 'DELETE', headers: this.headers });
   }

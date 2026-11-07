@@ -9,12 +9,14 @@ export class AdminController {
     this.loginView = new LoginView();
     this.formView = new FormView();
     this.listView = new ListView();
+    this.editingId = null; // null = adding, otherwise the id being edited
   }
 
   async init() {
     this.formView.populateCategories(CATEGORIES);
     this.loginView.onLogin((pw) => this.login(pw));
-    this.formView.onSubmit((data) => this.addDisease(data));
+    this.formView.onSubmit((data) => this.saveDisease(data));
+    this.formView.onCancel(() => this.cancelEdit());
 
     // stay logged in during this browser session
     if (this.model.password) await this.login(this.model.password, true);
@@ -29,17 +31,33 @@ export class AdminController {
     this.refreshList();
   }
 
-  async addDisease(formData) {
-    const result = await this.model.add(formData);
+  async saveDisease(formData) {
+    const wasEditing = this.editingId !== null;
+    const result = wasEditing
+      ? await this.model.update(this.editingId, formData)
+      : await this.model.add(formData);
+
     if (!result.ok) return this.formView.showMessage(result.error, false);
+
+    this.editingId = null;
     this.formView.reset();
-    this.formView.showMessage('Saved! It now appears on the public page.', true);
+    this.formView.showMessage(wasEditing ? 'Updated!' : 'Saved! It now appears on the public page.', true);
     this.refreshList();
+  }
+
+  startEdit(disease) {
+    this.editingId = disease.id;
+    this.formView.fillForm(disease);
+  }
+
+  cancelEdit() {
+    this.editingId = null;
+    this.formView.reset();
   }
 
   async refreshList() {
     const diseases = await this.model.list();
-    this.listView.render(diseases, async (id) => {
+    this.listView.render(diseases, (d) => this.startEdit(d), async (id) => {
       await this.model.remove(id);
       this.refreshList();
     });

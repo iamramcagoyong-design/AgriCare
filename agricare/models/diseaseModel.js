@@ -55,6 +55,32 @@ function create(data, image) {
   });
 }
 
+// Updates an existing disease. If a new photo was uploaded, it replaces the old one.
+// Returns { updated, oldImage } (oldImage = file to delete), or null if the id doesn't exist
+function update(id, data, newImage) {
+  return withLock(async () => {
+    const list = await getAll();
+    const index = list.findIndex((d) => d.id === id);
+    if (index === -1) return null;
+
+    const old = list[index];
+    const updated = {
+      ...old,
+      name: data.name.trim(),
+      plant: data.plant.trim(),
+      category: data.category,
+      symptoms: data.symptoms.trim(),
+      cause: data.cause.trim(),
+      prevention: toLines(data.prevention),
+      treatment: toLines(data.treatment),
+      image: newImage || old.image // keep the current photo if none was uploaded
+    };
+    list[index] = updated;
+    await saveAll(list);
+    return { updated, oldImage: newImage ? old.image : null };
+  });
+}
+
 // Returns the removed disease, or null if the id doesn't exist
 function remove(id) {
   return withLock(async () => {
@@ -66,4 +92,4 @@ function remove(id) {
   });
 }
 
-module.exports = { CATEGORIES, getAll, validate, create, remove };
+module.exports = { CATEGORIES, getAll, validate, create, update, remove };

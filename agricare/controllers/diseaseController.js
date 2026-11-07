@@ -30,3 +30,18 @@ exports.remove = wrap(async (req, res) => {
   await deleteUpload(removed.image);
   res.status(204).end();
 });
+exports.update = wrap(async (req, res) => {
+  const image = req.file ? '/uploads/' + req.file.filename : null;
+  const error = model.validate(req.body);
+  if (error) {
+    await deleteUpload(image);
+    return res.status(400).json({ error });
+  }
+  const result = await model.update(req.params.id, req.body, image);
+  if (!result) {
+    await deleteUpload(image);
+    return res.status(404).json({ error: 'Not found' });
+  }
+  await deleteUpload(result.oldImage); // remove the replaced photo
+  res.json(result.updated);
+});

@@ -1,0 +1,127 @@
+// DATA: the starting (sample) diseases. The model copies these into state the first time the app runs.
+export const CATEGORIES = ['Fungal', 'Bacterial', 'Viral', 'Pest', 'Weather', 'Soil / Nutrient'];
+
+export const SEED_DISEASES = [
+  {
+    id: 'seed-1',
+    name: 'Early Blight',
+    plant: 'Tomato',
+    category: 'Fungal',
+    symptoms: 'Dark brown spots with concentric rings (like a target) on older, lower leaves first, often surrounded by a yellow halo. Stems and fruit can also develop dark, sunken lesions.',
+    cause: 'Caused by the fungus Alternaria solani. It thrives in warm, humid weather and spreads by rain splash and overhead watering. Stressed or poorly fed plants get it more easily.',
+    prevention: [
+      'Rotate crops: avoid planting tomato, eggplant or potato in the same spot for 2-3 years',
+      'Water at the base of the plant, not over the leaves',
+      'Mulch the soil to stop spores splashing up',
+      'Give plants enough spacing and stake them for airflow',
+      'Clear away plant debris at the end of the season',
+    ],
+    treatment: [
+      'Remove and dispose of infected lower leaves right away',
+      'Apply a fungicide labeled for tomato blight (copper-based or as advised by your local agriculture office), following the label',
+      'Keep plants well fed and watered to reduce stress',
+    ],
+    image: null,
+  },
+  {
+    id: 'seed-2',
+    name: 'Late Blight',
+    plant: 'Tomato',
+    category: 'Fungal',
+    symptoms: 'Large, greasy-looking, gray-green patches on leaves that turn brown and papery. White fuzzy growth may appear under leaves in humid conditions. Fruit develops firm, brown, blotchy patches.',
+    cause: 'Caused by the water mold Phytophthora infestans. It spreads very fast in cool, wet, humid weather and can wipe out a crop within days.',
+    prevention: [
+      'Plant resistant varieties when available',
+      'Avoid overhead watering and water in the morning',
+      'Space plants for good airflow',
+      'Inspect plants often during rainy, cool spells',
+    ],
+    treatment: [
+      'Remove and destroy infected plants (bag them; do not compost)',
+      'Protective fungicides work best applied before or at the first signs; follow the label and local advice',
+      'Do not save fruit from infected plants',
+    ],
+    image: null,
+  },
+  {
+    id: 'seed-3',
+    name: 'Blossom End Rot',
+    plant: 'Tomato',
+    category: 'Soil / Nutrient',
+    symptoms: 'A sunken, dark brown or black leathery patch at the bottom (blossom end) of the fruit, usually on the first fruits of the season.',
+    cause: 'Not an infection. The fruit does not get enough calcium, usually because of uneven watering (dry spells followed by heavy watering) or very acidic soil, rather than a lack of calcium in the soil itself.',
+    prevention: [
+      'Water evenly and consistently, especially while fruits are forming',
+      'Mulch to keep soil moisture steady',
+      'Check soil pH; most tomatoes do well around 6.2-6.8',
+      'Avoid too much nitrogen fertilizer',
+    ],
+    treatment: [
+      'Pick off affected fruit so the plant puts energy into healthy ones',
+      'Correct watering habits; new fruits usually come out healthy',
+      'Add lime or calcium to the soil only if a soil test shows it is needed',
+    ],
+    image: null,
+  },
+  {
+    id: 'seed-4',
+    name: 'Flea Beetle Damage',
+    plant: 'Eggplant',
+    category: 'Pest',
+    symptoms: 'Many tiny round holes in leaves that look like shotgun pellets. Young plants can be badly damaged. Tiny dark beetles jump when you disturb the plant.',
+    cause: 'Caused by flea beetles feeding on leaves. They are most active in warm, dry weather and attack seedlings and young plants the most.',
+    prevention: [
+      'Cover seedlings with fine insect netting or row covers',
+      'Keep weeds down around the plants',
+      'Mulch to discourage beetles',
+      'Plant a trap crop such as radish nearby',
+    ],
+    treatment: [
+      'Hand-check plants regularly and knock beetles off into soapy water',
+      'Use neem oil or insecticidal soap on affected plants, following the label',
+      'Healthy, well-watered plants usually outgrow light damage',
+    ],
+    // Copy your flea beetle photo to images/flea-beetle.jpg. If the file is missing, a leaf placeholder is shown.
+    image: 'images/flea-beetle.jpg',
+  },
+  {
+    id: 'seed-5',
+    name: 'Verticillium Wilt',
+    plant: 'Eggplant',
+    category: 'Fungal',
+    symptoms: 'Yellowing between the leaf veins that often starts as V-shaped patches on lower leaves, followed by wilting (especially in the afternoon), browning and leaf drop. Cutting the stem may show brown streaks inside.',
+    cause: 'Caused by a soil-borne fungus (Verticillium) that enters through the roots and blocks water movement. It survives in the soil for years and is worse in cool soil.',
+    prevention: [
+      'Rotate with non-host crops such as corn or other grasses for several years',
+      'Use resistant varieties or grafted plants when possible',
+      'Use clean, disease-free seedlings and sanitize tools',
+      'Remove and destroy infected plants and roots',
+    ],
+    treatment: [
+      'No cure once a plant is infected; remove and dispose of it',
+      'Do not compost infected plants',
+      'Avoid planting susceptible crops in that spot next season',
+    ],
+    image: null,
+  },
+  {
+    id: 'seed-6',
+    name: 'Fruit and Shoot Borer',
+    plant: 'Eggplant',
+    category: 'Pest',
+    symptoms: 'Wilting and drooping of young shoot tips, small entry holes in shoots and fruits, and fruits that are filled with larval tunnels and droppings (frass), making them unmarketable.',
+    cause: 'Caused by the larvae (caterpillars) of the eggplant fruit and shoot borer moth, which tunnel into shoots and fruits. It is a common problem in warm, humid growing areas.',
+    prevention: [
+      'Remove and destroy wilted shoots and damaged fruits regularly',
+      'Install pheromone traps to monitor and catch moths',
+      'Rotate crops and avoid growing eggplant continuously in the same field',
+      'Keep fields clean of crop residues after harvest',
+    ],
+    treatment: [
+      'Cut and destroy infested shoots and fruits right away',
+      'Biological sprays such as Bt or neem-based products may help, following the label',
+      'Consult your local agriculture office for approved insecticides and timing',
+    ],
+    image: null,
+  },
+];

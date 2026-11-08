@@ -598,7 +598,7 @@ export const SEED_DISEASES = [{
             "Use only locally approved fungicides when recommended, following the product label.",
             "Ask an agricultural technician for advice during severe outbreaks."
         ],
-        "image": "black.jpg"
+        "image": "images/black.jpg"
     },
     {
         "id": "1794075000002",
@@ -619,7 +619,7 @@ export const SEED_DISEASES = [{
             "Use locally approved control products only when recommended and follow the label.",
             "Consult an agricultural technician about area-wide control."
         ],
-        "image": "podborer.jpg"
+        "image": "images/podborer.jpg"
     },
     {
         "id": "1794075000003",
@@ -640,7 +640,7 @@ export const SEED_DISEASES = [{
             "Disinfect pruning tools after working on affected trees.",
             "Seek local agricultural advice if symptoms continue to spread."
         ],
-        "image": "streak.jpg"
+        "image": "images/streak.jpg"
     },
     {
         "id": "1794075000004",
@@ -661,7 +661,7 @@ export const SEED_DISEASES = [{
             "Apply a fungicide labeled for onion purple blotch only when locally recommended.",
             "Follow the product label and local agricultural guidance."
         ],
-        "image": "purple.jpg"
+        "image": "images/purple.jpg"
     },
     {
         "id": "1794075000005",
@@ -682,7 +682,7 @@ export const SEED_DISEASES = [{
             "Clean and dry storage containers and improve ventilation.",
             "There is no reliable cure for bulbs that have already rotted."
         ],
-        "image": "soft.jpg"
+        "image": "images/soft.jpg"
     },
     {
         "id": "1794075000006",
@@ -703,7 +703,7 @@ export const SEED_DISEASES = [{
             "Do not save bulbs from infected plants as planting material.",
             "Use healthy planting stock for the next crop."
         ],
-        "image": "virus.jpg"
+        "image": "images/virus.jpg"
     },
     {
         "id": "1794075000007",
@@ -724,7 +724,7 @@ export const SEED_DISEASES = [{
             "Sanitize tools used on affected trees.",
             "Consult an agricultural technician about locally approved treatments and whether a tree can be saved."
         ],
-        "image": "phyyy.jpg"
+        "image": "images/phyyy.jpg"
     },
     {
         "id": "1794075000008",
@@ -745,7 +745,7 @@ export const SEED_DISEASES = [{
             "Disinfect tools after pruning affected trees.",
             "Seek local agricultural advice for trunk infections or severe cases."
         ],
-        "image": "pink.jpg"
+        "image": "images/pink.webp"
     },
     {
         "id": "1794075000009",
@@ -766,7 +766,7 @@ export const SEED_DISEASES = [{
             "Use locally approved fungicides only when recommended and follow the label.",
             "Ask an agricultural technician to confirm the diagnosis if symptoms are severe."
         ],
-        "image": "antha.jpg"
+        "image": "images/antha.webp"
     },
     {
         "id": "1794075000010",
@@ -787,7 +787,7 @@ export const SEED_DISEASES = [{
             "Use only locally approved fungicides when recommended and follow the label.",
             "Consult local agricultural guidance because fungicide choice depends on local resistance and registration."
         ],
-        "image": "downy.webp"
+        "image": "images/downy.webp"
     },
     {
         "id": "1794075000011",
@@ -808,7 +808,7 @@ export const SEED_DISEASES = [{
             "Manage weeds and aphids using locally recommended methods.",
             "Do not save seed from plants with suspected virus symptoms."
         ],
-        "image": "mosaic.jpg"
+        "image": "images/mosaic.jpg"
     },
     {
         "id": "1794075000012",
@@ -829,7 +829,7 @@ export const SEED_DISEASES = [{
             "Protect developing fruits with bags where feasible.",
             "Consult an agricultural technician about locally registered controls."
         ],
-        "image": "flt.png"
+        "image": "images/fly.png"
     },
     {
         "id": "1794075000013",
@@ -850,7 +850,7 @@ export const SEED_DISEASES = [{
             "Do not move planting material from affected plants.",
             "Replant with healthy stock and consult local agricultural authorities."
         ],
-        "image": "ring.webp"
+        "image": "images/ring.webp"
     },
     {
         "id": "1794075000014",
@@ -871,7 +871,7 @@ export const SEED_DISEASES = [{
             "Use locally approved treatments only when recommended; ensure coverage of affected plant parts.",
             "Contact local agricultural services about biological control and severe infestations."
         ],
-        "image": "melly.jpg"
+        "image": "images/melly.jpg"
     },
     {
         "id": "1794075000015",
@@ -892,7 +892,7 @@ export const SEED_DISEASES = [{
             "Avoid applying extra fertilizer without a test; boron has a narrow safe range.",
             "Monitor new growth and fruit after correcting the underlying soil issue."
         ],
-        "image": "bumpy.png"
+        "image": "images/bumpy.png"
     },
     {
         "id": "1794075000016",
@@ -913,7 +913,7 @@ export const SEED_DISEASES = [{
             "Follow product instructions and avoid applying treatments in damaging heat.",
             "Consult an agricultural technician if the disease spreads rapidly."
         ],
-        "image": "swuash.jpg"
+        "image": "images/swuash.jpg"
     },
     {
         "id": "1794075000017",
@@ -934,7 +934,7 @@ export const SEED_DISEASES = [{
             "Test the soil before applying calcium or lime.",
             "New fruit often develops normally once growing conditions improve."
         ],
-        "image": "endrot.jpg"
+        "image": "images/endrot.jpg"
     },
     {
         "id": "1794075000018",
@@ -955,6 +955,6 @@ export const SEED_DISEASES = [{
             "Use locally registered controls targeting young larvae when recommended.",
             "Follow product labels and local agricultural guidance to protect pollinators."
         ],
-        "image": "worm.jpg"
+        "image": "images/worm.jpg"
     }
-];
+]

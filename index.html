@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AgriCare - Plant Disease Guide</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="inner">
+      <span class="logo">🌱 Agri<span>Care</span></span>
+      <nav id="tabs" class="tabs" aria-label="Sections"></nav>
+    </div>
+  </header>
+
+  <section class="hero" data-panel="browse">
+    <h1>IDENTIFY YOUR PLANT'S PROBLEM</h1>
+    <p>Browse common plant diseases and pests by how they look. Compare symptoms side by side, learn the main cause, and find out how to prevent and treat them.</p>
+  </section>
+
+  <main class="container">
+
+    <!-- Tab 1: browse -->
+    <section data-panel="browse">
+      <div id="filters" class="filters">
+        <input id="search" type="search" placeholder="Search by plant, symptom or disease name (e.g. yellow leaves, tomato)">
+        <select id="plant-filter" aria-label="Filter by plant"></select>
+        <select id="cat-filter" aria-label="Filter by cause"></select>
+      </div>
+      <p id="result-count" class="muted"></p>
+      <p id="notice" class="notice" role="status" hidden></p>
+      <div id="card-list" class="grid"></div>
+      <p id="empty-msg" class="empty" hidden>No diseases match your search. Try different words or clear the filters.</p>
+    </section>
+
+    <!-- Tab 2: manage (add, edit, delete) -->
+    <section data-panel="manage" hidden>
+      <div class="panel">
+        <h2 id="form-title">Add a disease</h2>
+        <p id="form-msg" class="message" role="alert" hidden></p>
+        <!-- novalidate: the app shows its own error messages instead of the browser's pop-ups -->
+        <form id="disease-form" novalidate>
+          <div class="row2">
+            <div class="field"><label for="f-name">Disease / problem name</label><input id="f-name" name="name" placeholder="e.g. Powdery Mildew"></div>
+            <div class="field"><label for="f-plant">Plant</label><input id="f-plant" name="plant" placeholder="e.g. Tomato"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="f-category">Main cause type</label><select id="f-category" name="category"></select></div>
+            <div class="field">
+              <label for="f-image">Photo (optional)</label>
+              <input id="f-image" name="image" type="file" accept="image/*">
+              <small class="muted">Shrunk and saved in your browser. When editing, leave empty to keep the current photo.</small>
+            </div>
+          </div>
+          <div class="field"><label for="f-symptoms">What it looks like (symptoms)</label><textarea id="f-symptoms" name="symptoms" rows="3"></textarea></div>
+          <div class="field"><label for="f-cause">Main cause (pest, weather, soil quality, etc.)</label><textarea id="f-cause" name="cause" rows="3"></textarea></div>
+          <div class="field"><label for="f-prevention">Prevention</label><textarea id="f-prevention" name="prevention" rows="4"></textarea><small class="muted">One tip per line.</small></div>
+          <div class="field"><label for="f-treatment">Treatment</label><textarea id="f-treatment" name="treatment" rows="4"></textarea><small class="muted">One step per line.</small></div>
+          <button class="btn" id="submit-btn" type="submit">Save disease</button>
+          <button class="btn secondary" id="cancel-edit" type="button" hidden>Cancel edit</button>
+        </form>
+      </div>
+
+      <div class="panel">
+        <div class="panel-head">
+          <h2>Your diseases</h2>
+          <button class="btn secondary" id="reset-data" type="button">Reset sample data</button>
+        </div>
+        <div id="manage-list" class="admin-list"></div>
+      </div>
+    </section>
+
+    <!-- Tab 3: calculator -->
+    <section data-panel="calculator" hidden>
+      <div class="panel" id="calculator">
+        <h2>Disease incidence calculator</h2>
+        <p class="muted">Incidence % = infected plants ÷ total plants × 100. It updates as you type.</p>
+        <div class="row2">
+          <div class="field"><label for="infected">Infected plants</label><input id="infected" type="number" min="0" inputmode="numeric"></div>
+          <div class="field"><label for="total">Total plants</label><input id="total" type="number" min="1" inputmode="numeric"></div>
+        </div>
+        <div id="calc-result" class="calc-result" aria-live="polite"></div>
+        <p class="note">Low is under 10%, Moderate is 10% to under 30%, High is 30% or more. These are rough guides, not official thresholds. Ask your local agriculture office for crop-specific advice.</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="compare-bar" class="compare-bar" hidden></div>
+  <dialog id="detail-dialog"></dialog>
+  <dialog id="compare-dialog"></dialog>
+
+  <footer>AgriCare is a guide only. For serious outbreaks, ask your local agriculture office or an agricultural technician.</footer>
+
+  <script type="module" src="js/controller.js"></script>
+</body>
+</html>
